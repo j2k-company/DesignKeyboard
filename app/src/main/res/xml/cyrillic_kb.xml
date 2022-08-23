@@ -1,136 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:keyHeight="8%p"
-    app:keyWidth="12.5%p">
+    app:keyWidth="8.5%p"
+    app:horizontalGap="5px"
+    app:verticalGap="0px"
+    app:keyHeight="50dp">
+
     <Row>
-        <Key
-            app:codes="49"
-            app:keyEdgeFlags="left"
-            app:keyLabel="1" />
-        <Key
-            app:codes="50"
-            app:keyLabel="2" />
-        <Key
-            app:codes="51"
-            app:keyLabel="3" />
-        <Key
-            app:codes="52"
-            app:keyLabel="4" />
-        <Key
-            app:codes="53"
-            app:keyLabel="5" />
-        <Key
-            app:codes="54"
-            app:keyLabel="6" />
-        <Key
-            app:codes="55"
-            app:keyLabel="7" />
-        <Key
-            app:codes="56"
-            app:keyLabel="8" />
-        <Key
-            app:codes="57"
-            app:keyLabel="9" />
-        <Key
-            app:codes="48"
-            app:keyLabel="0" />
+        <Key app:codes="1081" app:keyLabel="й" app:keyEdgeFlags="right" />
+        <Key app:codes="1094" app:keyLabel="ц" />
+        <Key app:codes="1091" app:keyLabel="у" />
+        <Key app:codes="1082" app:keyLabel="к" />
+        <Key app:codes="1077" app:keyLabel="е" />
+        <Key app:codes="1085" app:keyLabel="н" />
+        <Key app:codes="1075" app:keyLabel="г" />
+        <Key app:codes="1096" app:keyLabel="ш" />
+        <Key app:codes="1097" app:keyLabel="щ" />
+        <Key app:codes="1079" app:keyLabel="з" />
+        <Key app:codes="1093" app:keyLabel="х" app:keyEdgeFlags="left" />
     </Row>
     <Row>
-        <Key
-            app:codes="81"
-            app:keyEdgeFlags="left"
-            app:keyLabel="Q" />
-        <Key
-            app:codes="87"
-            app:keyLabel="W" />
-        <Key
-            app:codes="69"
-            app:keyLabel="E" />
-        <Key
-            app:codes="82"
-            app:keyLabel="R" />
-        <Key
-            app:codes="84"
-            app:keyLabel="T" />
-        <Key
-            app:codes="89"
-            app:keyLabel="Y" />
-        <Key
-            app:codes="85"
-            app:keyLabel="U" />
-        <Key
-            app:codes="73"
-            app:keyLabel="I" />
-        <Key
-            app:codes="79"
-            app:keyLabel="O" />
-        <Key
-            app:codes="80"
-            app:keyLabel="P" />
+        <Key app:codes="1092" app:keyLabel="ф" app:keyEdgeFlags="left" />
+        <Key app:codes="1099" app:keyLabel="ы" />
+        <Key app:codes="1074" app:keyLabel="в" />
+        <Key app:codes="1072" app:keyLabel="а" />
+        <Key app:codes="1087" app:keyLabel="п" />
+        <Key app:codes="1088" app:keyLabel="р" />
+        <Key app:codes="1086" app:keyLabel="о" />
+        <Key app:codes="1083" app:keyLabel="л" />
+        <Key app:codes="1076" app:keyLabel="д" />
+        <Key app:codes="1078" app:keyLabel="ж" />
+        <Key app:codes="1101" app:keyLabel="э" app:keyEdgeFlags="right" />
     </Row>
     <Row>
-        <Key
-            app:codes="65"
-            app:keyEdgeFlags="left"
-            app:keyLabel="A" />
-        <Key
-            app:codes="83"
-            app:keyLabel="S" />
-        <Key
-            app:codes="68"
-            app:keyLabel="D" />
-        <Key
-            app:codes="70"
-            app:keyLabel="F" />
-        <Key
-            app:codes="71"
-            app:keyLabel="G" />
-        <Key
-            app:codes="72"
-            app:keyLabel="H" />
-        <Key
-            app:codes="74"
-            app:keyLabel="J" />
-        <Key
-            app:codes="75"
-            app:keyLabel="K" />
-        <Key
-            app:codes="76"
-            app:keyLabel="L" />
-        <Key
-            app:codes="-5"
-            app:keyLabel="Back" />
+        <Key app:codes="-1" app:keyLabel="CAPS" app:keyWidth="13%p" app:keyEdgeFlags="left" />
+        <Key app:codes="1103" app:keyLabel="я" />
+        <Key app:codes="1095" app:keyLabel="ч" />
+        <Key app:codes="1089" app:keyLabel="с" />
+        <Key app:codes="1084" app:keyLabel="м" />
+        <Key app:codes="1080" app:keyLabel="и" />
+        <Key app:codes="1090" app:keyLabel="т" />
+        <Key app:codes="1100" app:keyLabel="ь" />
+        <Key app:codes="1073" app:keyLabel="б" />
+        <Key app:codes="1102" app:keyLabel="ю" />
+        <Key app:codes="-5" app:keyLabel="BACK"
+            app:isRepeatable="true" app:keyEdgeFlags="right" app:keyWidth="13%p" />
     </Row>
-    <Row>
-        <Key
-            app:codes="44"
-            app:keyLabel="," />
-        <Key
-            app:codes="45"
-            app:keyLabel="-" />
-        <Key
-            app:codes="90"
-            app:keyLabel="Z" />
-        <Key
-            app:codes="88"
-            app:keyLabel="X" />
-        <Key
-            app:codes="67"
-            app:keyLabel="C" />
-        <Key
-            app:codes="86"
-            app:keyLabel="V" />
-        <Key
-            app:codes="66"
-            app:keyLabel="B" />
-        <Key
-            app:codes="78"
-            app:keyLabel="N" />
-        <Key
-            app:codes="77"
-            app:keyLabel="M" />
-        <Key
-            app:codes="-3"
-            app:keyLabel="Fin" />
+    <Row app:rowEdgeFlags="bottom">
+        <Key app:codes="-6" app:keyLabel="\?123" app:keyWidth="16%p" app:keyEdgeFlags="left"/>
+        <Key app:codes="44" app:keyLabel=","/>
+        <Key app:codes="32" app:keyLabel=" " app:keyWidth="46.82%p" app:isRepeatable="true"/>
+        <Key app:codes="46" app:keyLabel="." />
+        <Key app:codes="-4" app:keyLabel="DONE" app:keyWidth="19%p" app:keyEdgeFlags="right"/>
     </Row>
+
 </Keyboard>
