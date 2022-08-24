@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:keyWidth="8.5%p"
-    app:horizontalGap="5px"
-    app:verticalGap="0px"
+    app:keyWidth="9%p"
     app:keyHeight="50dp">
 
     <Row>
-        <Key app:codes="1081" app:keyLabel="й" app:keyEdgeFlags="right" />
+        <Key app:codes="1081" app:keyLabel="й" app:keyEdgeFlags="left" app:horizontalGap="0.33%p" />
         <Key app:codes="1094" app:keyLabel="ц" />
         <Key app:codes="1091" app:keyLabel="у" />
         <Key app:codes="1082" app:keyLabel="к" />
@@ -16,10 +14,10 @@
         <Key app:codes="1096" app:keyLabel="ш" />
         <Key app:codes="1097" app:keyLabel="щ" />
         <Key app:codes="1079" app:keyLabel="з" />
-        <Key app:codes="1093" app:keyLabel="х" app:keyEdgeFlags="left" />
+        <Key app:codes="1093" app:keyLabel="х" />
     </Row>
     <Row>
-        <Key app:codes="1092" app:keyLabel="ф" app:keyEdgeFlags="left" />
+        <Key app:codes="1092" app:keyLabel="ф" app:keyEdgeFlags="left" app:horizontalGap="0.33%p" />
         <Key app:codes="1099" app:keyLabel="ы" />
         <Key app:codes="1074" app:keyLabel="в" />
         <Key app:codes="1072" app:keyLabel="а" />
@@ -29,10 +27,10 @@
         <Key app:codes="1083" app:keyLabel="л" />
         <Key app:codes="1076" app:keyLabel="д" />
         <Key app:codes="1078" app:keyLabel="ж" />
-        <Key app:codes="1101" app:keyLabel="э" app:keyEdgeFlags="right" />
+        <Key app:codes="1101" app:keyLabel="э" />
     </Row>
     <Row>
-        <Key app:codes="-1" app:keyLabel="CAPS" app:keyWidth="13%p" app:keyEdgeFlags="left" />
+        <Key app:codes="-1" app:keyLabel="CAPS" app:keyEdgeFlags="left" app:horizontalGap="0.33%p"/>
         <Key app:codes="1103" app:keyLabel="я" />
         <Key app:codes="1095" app:keyLabel="ч" />
         <Key app:codes="1089" app:keyLabel="с" />
@@ -42,15 +40,15 @@
         <Key app:codes="1100" app:keyLabel="ь" />
         <Key app:codes="1073" app:keyLabel="б" />
         <Key app:codes="1102" app:keyLabel="ю" />
-        <Key app:codes="-5" app:keyLabel="BACK"
-            app:isRepeatable="true" app:keyEdgeFlags="right" app:keyWidth="13%p" />
+        <Key app:codes="-5" app:keyLabel="BACK" app:isRepeatable="true" />
     </Row>
     <Row app:rowEdgeFlags="bottom">
-        <Key app:codes="-6" app:keyLabel="\?123" app:keyWidth="16%p" app:keyEdgeFlags="left"/>
+        <Key app:codes="-6" app:keyLabel="\?123" app:keyWidth="16%p" app:keyEdgeFlags="left"
+            app:horizontalGap="0.33%p" />
         <Key app:codes="44" app:keyLabel=","/>
-        <Key app:codes="32" app:keyLabel=" " app:keyWidth="46.82%p" app:isRepeatable="true"/>
+        <Key app:codes="32" app:keyLabel=" " app:keyWidth="46.3%p" app:isRepeatable="true"/>
         <Key app:codes="46" app:keyLabel="." />
-        <Key app:codes="-4" app:keyLabel="DONE" app:keyWidth="19%p" app:keyEdgeFlags="right"/>
+        <Key app:codes="-4" app:keyLabel="DONE" app:keyWidth="19%p" />
     </Row>
 
 </Keyboard>
