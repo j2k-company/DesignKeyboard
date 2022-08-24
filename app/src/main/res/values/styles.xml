@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="KeyboardView" parent="android:Widget">
+        <item name="android:background">@color/black</item>
+        <item name="keyBackground">@color/white</item>
+        <item name="keyTextSize">22sp</item>
+        <item name="keyTextColor">@color/black</item>
+        <item name="keyPreviewLayout">@layout/key_preview</item>
+        <item name="keyPreviewOffset">-12dp</item>
+        <item name="keyPreviewHeight">80dp</item>
+        <item name="labelTextSize">14sp</item>
+        <item name="verticalCorrection">-10dp</item>
+    </style>
+</resources>
