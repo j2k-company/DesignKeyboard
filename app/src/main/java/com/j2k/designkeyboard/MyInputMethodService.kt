@@ -8,13 +8,18 @@ import com.hijamoya.keyboardview.Keyboard
 import com.hijamoya.keyboardview.KeyboardView
 
 class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
+    lateinit var keyboardView: KeyboardView
+    lateinit var keyboard: Keyboard
+    var isUpperCase = false
+
     @SuppressLint("InflateParams")
     override fun onCreateInputView(): View {
-        return layoutInflater.inflate(R.layout.keyboard_view, null).apply {
-            if(this is KeyboardView) {
-                setOnKeyboardActionListener(this@MyInputMethodService)
-                keyboard = Keyboard(this@MyInputMethodService, R.xml.cyrillic_kb)
-            }
+        keyboard = Keyboard(this, R.xml.cyrillic_kb)
+        keyboardView = layoutInflater.inflate(R.layout.keyboard_view, null) as KeyboardView
+
+        return keyboardView.apply {
+            keyboard = this@MyInputMethodService.keyboard
+            setOnKeyboardActionListener(this@MyInputMethodService)
         }
     }
 
@@ -29,8 +34,16 @@ class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardAction
                     ic.commitText("", 1)
                 }
             }
+            Keyboard.KEYCODE_SHIFT -> {
+                isUpperCase = !isUpperCase
+                keyboard.isShifted = isUpperCase
+                keyboardView.invalidateAllKeys()
+            }
             else -> {
-                ic.commitText(primaryCode.toChar().toString(), 1)
+                var symdol = primaryCode.toChar()
+                if(isUpperCase) symdol = symdol.uppercaseChar()
+
+                ic.commitText(symdol.toString(), 1)
             }
         }
     }
