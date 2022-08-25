@@ -40,10 +40,10 @@ class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardAction
                 keyboardView.invalidateAllKeys()
             }
             else -> {
-                var symdol = primaryCode.toChar()
-                if(isUpperCase) symdol = symdol.uppercaseChar()
+                var symbol = primaryCode.toChar()
+                if(isUpperCase) symbol = symbol.uppercaseChar()
 
-                ic.commitText(symdol.toString(), 1)
+                ic.commitText(symbol.toString(), 1)
             }
         }
     }
