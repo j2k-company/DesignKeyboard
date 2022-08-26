@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!--  integer keyboard  -->
+    <integer name="bgColor">0xffffff</integer>
+    <!--  integer key  -->
+    <integer name="keyWidth">40</integer>
+    <integer name="keyHeight">100</integer>
+    <integer name="keyTextSize">100</integer>
+    <integer name="keyTextColor">0xffffff</integer>
+    <integer name="keyBgColor">0x000000</integer>
+</resources>
