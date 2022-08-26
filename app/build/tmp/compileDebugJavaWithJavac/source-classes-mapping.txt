@@ -1,0 +1,4 @@
+com/j2k/designkeyboard/BuildConfig.java
+ com.j2k.designkeyboard.BuildConfig
+com/j2k/designkeyboard/MainActivity.java
+ com.j2k.designkeyboard.MainActivity
