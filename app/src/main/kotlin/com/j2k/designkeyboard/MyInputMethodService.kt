@@ -8,14 +8,14 @@ import com.hijamoya.keyboardview.Keyboard
 import com.hijamoya.keyboardview.KeyboardView
 
 class MyInputMethodService : InputMethodService(), KeyboardView.OnKeyboardActionListener {
-    lateinit var keyboardView: KeyboardView
-    lateinit var keyboard: Keyboard
-    var isUpperCase = false
+    private lateinit var keyboardView: KeyboardView
+    private lateinit var keyboard: Keyboard
+    private var isUpperCase = false
 
     @SuppressLint("InflateParams")
     override fun onCreateInputView(): View {
-        keyboard = Keyboard(this, R.xml.cyrillic_kb)
         keyboardView = layoutInflater.inflate(R.layout.keyboard_view, null) as KeyboardView
+        keyboard = Keyboard(this, R.xml.cyrillic_kb)
 
         return keyboardView.apply {
             keyboard = this@MyInputMethodService.keyboard
