@@ -17,8 +17,11 @@ public class MainActivity extends AppCompatActivity {
         // int keyWidth = uwu.getKeyWidth();
         // uwu.setKeyWidth(keyWidth);
     }
-
-    public void openSettings(View view) {
+    public void openSetup(View view) {
         startActivity(new Intent(Settings.ACTION_INPUT_METHOD_SETTINGS));
+    }
+    public void openSettings(View view) {
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 }
