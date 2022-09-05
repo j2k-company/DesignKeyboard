@@ -5,26 +5,47 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
-public class SettingsActivity extends AppCompatActivity {
-    private final KeyboardPreferences keyboardPreferences =
-            new KeyboardPreferences(getBaseContext());
+public class SettingsActivity extends AppCompatActivity
+        implements SeekBar.OnSeekBarChangeListener {
+    private KeyboardPreferences keyboardPreferences;
+    private TextView mViewWidth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
+
+        keyboardPreferences = new KeyboardPreferences(getBaseContext());
+
+        final SeekBar seekBarWidth = (SeekBar) findViewById(R.id.seekBarWidth);
+        seekBarWidth.setOnSeekBarChangeListener(this);
+
+        mViewWidth = (TextView) findViewById(R.id.viewWidth);
+        mViewWidth.setText("0");
     }
-    public void changeKeyWidth(View view) {
-        EditText editText = (EditText) findViewById(R.id.input_width);
-        String message = editText.getText().toString();
-        int newWidth = Integer.parseInt(message);
+
+    public void openMain(View view) {
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
+    @Override
+    public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+        mViewWidth.setText(String.valueOf(seekBar.getProgress()));
+    }
+
+    @Override
+    public void onStartTrackingTouch(SeekBar seekBar) {
+    }
+
+    @Override
+    public void onStopTrackingTouch(SeekBar seekBar) {
+        mViewWidth.setText(String.valueOf(seekBar.getProgress()));
+        int newWidth = seekBar.getProgress();
         if (newWidth > 0) {
             keyboardPreferences.setKeyWidth(newWidth);
         }
-    }
-    public void openMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
     }
 }

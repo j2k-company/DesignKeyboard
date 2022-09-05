@@ -6,43 +6,55 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-    <EditText
-        android:id="@+id/input_width"
-        android:layout_width="221dp"
-        android:layout_height="60dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/print_width"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/get_width"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
-
-    <Button
-        android:id="@+id/get_width"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:text="@string/confirm"
-        android:onClick="changeKeyWidth"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/input_width"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155" />
-
     <Button
         android:id="@+id/return_main"
         android:layout_width="214dp"
         android:layout_height="91dp"
-        android:text="@string/return_back"
         android:onClick="openMain"
+        android:text="@string/return_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.893" />
+
+    <TextView
+        android:id="@+id/textWidth"
+        android:layout_width="96dp"
+        android:layout_height="35dp"
+        android:text="@string/keyWidth"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <SeekBar
+        android:id="@+id/seekBarWidth"
+        android:layout_width="221dp"
+        android:layout_height="40dp"
+        android:max="100"
+        android:progress="40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/viewWidth"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <TextView
+        android:id="@+id/viewWidth"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/seekBarWidth"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182"
+        tools:text="90" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

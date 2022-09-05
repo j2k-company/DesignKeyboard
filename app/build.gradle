@@ -49,6 +49,7 @@ dependencies {
 
     // other
     implementation 'io.github.hijamoya:keyboardview:0.0.2'
+    implementation 'io.github.eltos:simpledialogfragments:3.6.2'
 
     // test
     testImplementation 'junit:junit:'

@@ -5,4 +5,5 @@
     <string name="confirm">Confirm</string>
     <string name="return_back">Return Back</string>
     <string name="print_width">Print Width</string>
+    <string name="keyWidth">Key Width</string>
 </resources>
