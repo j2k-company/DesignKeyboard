@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="mKeyboardView">
+        <attr name="keyTextSize" format="dimension" />
+        <attr name="keyTextColor" format="color" />
+        <attr name="KeyBackground" format="reference" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+</resources>
