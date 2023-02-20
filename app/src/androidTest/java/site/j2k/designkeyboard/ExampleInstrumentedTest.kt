@@ -1,4 +1,4 @@
-package com.j2k.designkeyboard
+package site.j2k.designkeyboard
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.j2k.designkeyboard", appContext.packageName)
+        assertEquals("site.j2k.designkeyboard", appContext.packageName)
     }
 }

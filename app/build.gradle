@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.j2k.designkeyboard"
+        applicationId "site.j2k.designkeyboard"
         minSdk 25
         targetSdk 32
         versionCode 1

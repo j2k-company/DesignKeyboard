@@ -1,4 +1,4 @@
-package com.j2k.designkeyboard
+package site.j2k.designkeyboard
 
 import android.annotation.SuppressLint
 import android.content.Context
